@@ -13,13 +13,9 @@ gulp.task('watch', function(cb) {
 
   fs.access('HoloJS', fs.constants.F_OK , (err) => {
     if (err){
-      git.clone('https://github.com/dbradleyfl/HoloJS.git', function (err) {
+      git.clone('https://github.com/dbradleyfl/HoloJS.git', {args: '--recursive'} , function (err) {
         if (err) throw err;
-        fs.rmdir('./HoloJS/angle');
-        git.clone('https://github.com/Microsoft/angle.git', {args: './HoloJS/angle'},function(err){
-          if (err) throw err;
-          console.log('Successfully downloaded HoloJS and Angle')
-        });
+        console.log('Successfully downloaded HoloJS and Angle')
       });
     } else {
       console.log('repo exists so not dowloading it')
