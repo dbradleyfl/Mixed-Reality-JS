@@ -1,3 +1,5 @@
+let THREE = require('three');
+
 let canvas = document.createElement(window.getViewMatrix ? 'canvas3D' : 'canvas');
 if (!window.getViewMatrix) {
     document.body.appendChild(canvas);
