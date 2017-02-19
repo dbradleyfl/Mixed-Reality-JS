@@ -1,10 +1,12 @@
 {
   "name": "holojs-builder",
   "version": "0.0.1",
-  "description": "A simpler and more opinionated way to build apps for the hololens with Javascript.",
+  "description": "A simpler and more opinionated way to build apps for the hololens with Javascript and ThreeJS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "icons": "echo \"This will copy icons to app Assets folder\"",
+    "rename": "echo \"This will rename the app inside HoloJS folder\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/dbradleyfl/HoloJS-Builder/issues"
   },
-  "homepage": "https://github.com/dbradleyfl/HoloJS-Builder#readme"
+  "homepage": "https://github.com/dbradleyfl/HoloJS-Builder#readme",
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "budo": "^9.4.7",
+    "three": "^0.84.0"
+  }
 }
