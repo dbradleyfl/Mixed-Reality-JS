@@ -1,0 +1,27 @@
+{
+  "name": "holojs-builder",
+  "version": "0.0.1",
+  "description": "A simpler and more opinionated way to build apps for the hololens with Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbradleyfl/HoloJS-Builder.git"
+  },
+  "keywords": [
+    "holojs",
+    "augmented",
+    "reality",
+    "hololens",
+    "three",
+    "js"
+  ],
+  "author": "Devon Bradley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbradleyfl/HoloJS-Builder/issues"
+  },
+  "homepage": "https://github.com/dbradleyfl/HoloJS-Builder#readme"
+}
