@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var budo = require('budo')
 var babelify = require('babelify')
 var fs = require('fs');
+var git = require("gulp-git");
 
 let paths = {
   'app': 'src/*',
@@ -9,6 +10,17 @@ let paths = {
 }
 
 gulp.task('watch', function(cb) {
+
+  fs.access('HoloJS', fs.constants.F_OK , (err) => {
+    if (err){
+      git.clone('https://github.com/dbradleyfl/HoloJS.git', function (err) {
+        if (err) throw err;
+      });
+    } else {
+      console.log('repo exists so not dowloading it')
+    }
+  });
+
   gulp.watch(paths.app, ['build-app']);
   gulp.watch(paths.icons, ['build-icons']);
 

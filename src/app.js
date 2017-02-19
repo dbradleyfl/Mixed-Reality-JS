@@ -60,7 +60,7 @@ cube.geometry.addAttribute('color', new THREE.BufferAttribute(Float32Array.from(
 loader.load('texture.png', tex => { cube.material.map = tex; start(); }, x => x, err => start());
 
 sphere.position.set(0.4, 0, -1.5);
-sphere.material.color.set(0xff0000);
+sphere.material.color.set(0x20e608);
 sphere.material.roughness = 0.3;
 sphere.material.metalness = 0.2;
 
