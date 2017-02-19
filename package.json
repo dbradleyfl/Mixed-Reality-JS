@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "icons": "echo \"This will copy icons to app Assets folder\"",
-    "rename": "echo \"This will rename the app inside HoloJS folder\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -32,7 +30,6 @@
     "budo": "^9.4.7",
     "gulp": "^3.9.1",
     "gulp-git": "^2.0.0",
-    "shelljs": "^0.7.6",
     "three": "^0.84.0"
   },
   "devDependencies": {}
