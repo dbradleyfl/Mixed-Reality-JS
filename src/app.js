@@ -1,4 +1,9 @@
-let THREE = require('three');
+// The require statement below is just there to ensure the threejs library is loaded in the web view of Holojs-builder. Imports and requires are not currently supported in Holojs-builder. Your app can only use javascript and the threejs libraries.
+try {
+   THREE = require('three');
+} catch (e) {
+  console.log('Cannot require things inside holojs right now');
+}
 
 let canvas = document.createElement(window.getViewMatrix ? 'canvas3D' : 'canvas');
 if (!window.getViewMatrix) {
