@@ -3,7 +3,7 @@ A simpler and more opinionated framework for building Hololens applications with
 
 ## Requirements
 * Windows 10
-* Hololens
+* Hololens (Or emulator)
 
 ## Getting Started
 
