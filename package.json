@@ -31,12 +31,6 @@
   },
   "homepage": "https://github.com/dbradleyfl/Mixed-Reality-JS#readme",
   "dependencies": {
-    "babelify": "^7.3.0",
-    "budo": "^9.4.7",
-    "gulp": "^3.9.1",
-    "gulp-git": "^2.0.0",
     "shelljs": "^0.7.7",
-    "three": "^0.84.0"
-  },
-  "devDependencies": {}
+  }
 }

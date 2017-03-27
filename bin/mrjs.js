@@ -16,10 +16,10 @@ switch (args[0]) {
     }
     break;
   case "start":
-    console.log("Run mrjs app development server.");
+    console.log("Run mrjs app development server. ", process.cwd());
     break;
   case "package":
-    console.log("Package mrjs app as Universal Windows Platform application.")
+    console.log("Package mrjs app as Universal Windows Platform application.", process.cwd())
     break;
   default:
 
