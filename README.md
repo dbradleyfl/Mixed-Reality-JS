@@ -13,4 +13,4 @@ A simple framework for building Hololens applications with Javascript and [Three
 
 3. Make sure your Hololens development environment is all setup [using Microsoft's guides](https://developer.microsoft.com/en-us/windows/holographic/getting_started).
 
-4. To deploy and debug, on emulator or device, run  *mrjs package*, open the HoloJS solution located in the release/ folder in Visual Studio. Build > Clean Solution. Build > Rebuild Solution. Deploy the app named after your package.json to either your emulator or device.
+4. To deploy and debug, on emulator or device, run  *mrjs package*, open the HoloJS solution located in the release/ folder in Visual Studio. Change the deployment app from HoloHost to ThreeJSApp. Build > Clean Solution. Build > Rebuild Solution. Select your deployment target (Device, or emulator) in the menu then deploy the ThreeJSApp.

@@ -1,4 +1,5 @@
-const THREE = require('three');
+let THREE = require('three');
+THREE = require('./hololens-compatibility/three-patch')(THREE);
 
 let canvas = document.createElement(window.getViewMatrix ? 'canvas3D' : 'canvas');
 if (!window.getViewMatrix) {
@@ -57,10 +58,10 @@ cube.geometry.addAttribute('color', new THREE.BufferAttribute(Float32Array.from(
     0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, // back - cyan
     1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, // front - purple
 ]), 3));
-loader.load('../assets/texture.png', tex => { cube.material.map = tex; start(); }, x => x, err => start());
+loader.load('texture.png', tex => { cube.material.map = tex; start(); }, x => x, err => start());
 
 sphere.position.set(0.4, 0, -1.5);
-sphere.material.color.set(0x20e608);
+sphere.material.color.set(0xff0000);
 sphere.material.roughness = 0.3;
 sphere.material.metalness = 0.2;
 

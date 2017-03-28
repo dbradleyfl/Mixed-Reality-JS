@@ -1,7 +1,7 @@
 {
   "name": "mrjs",
-  "version": "0.0.2",
-  "description": "A simple way to build apps for the hololens with Javascript and ThreeJS.",
+  "version": "0.0.3",
+  "description": "A simple way to build applications for the hololens with Javascript and ThreeJS.",
   "main": "index.js",
   "scripts": {
     "start": "echo \"Framework being updated to webpack. Just uploading to npm to claim name\" && exit 1",
@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/dbradleyfl/Mixed-Reality-JS#readme",
   "dependencies": {
-    "shelljs": "^0.7.7",
+    "shelljs": "^0.7.7"
   }
 }
