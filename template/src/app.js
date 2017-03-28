@@ -1,9 +1,4 @@
-// The require statement below is just there to ensure the threejs library is loaded in the web view of Holojs-builder. Imports and requires are not currently supported in Holojs-builder. Your app can only use javascript and the threejs libraries.
-try {
-   THREE = require('three');
-} catch (e) {
-  console.log('Cannot require things inside holojs right now');
-}
+const THREE = require('three');
 
 let canvas = document.createElement(window.getViewMatrix ? 'canvas3D' : 'canvas');
 if (!window.getViewMatrix) {
@@ -62,7 +57,7 @@ cube.geometry.addAttribute('color', new THREE.BufferAttribute(Float32Array.from(
     0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, // back - cyan
     1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0, // front - purple
 ]), 3));
-loader.load('texture.png', tex => { cube.material.map = tex; start(); }, x => x, err => start());
+loader.load('../assets/texture.png', tex => { cube.material.map = tex; start(); }, x => x, err => start());
 
 sphere.position.set(0.4, 0, -1.5);
 sphere.material.color.set(0x20e608);

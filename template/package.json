@@ -4,6 +4,8 @@
   "description": "\"App built with mrjs\"",
   "main": "app.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

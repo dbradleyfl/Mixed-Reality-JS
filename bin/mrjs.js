@@ -1,25 +1,35 @@
 #! /usr/bin/env node
-var shell = require("shelljs");
+const path = require('path');
+const shell = require("shelljs");
 
-let args = process.argv.slice(2);
+const MODULE_ROOT_PATH = path.join(__dirname, "..");
+const MODULE_TEMPLATE_PATH = path.join(__dirname, "..", "template");
+const USER_ARGS = process.argv.slice(2);
+const USER_CWD = process.cwd();
 
-// args.forEach(function (val, index, array) {
+// USER_ARGS.forEach(function (val, index, array) {
 //   console.log(index + ': ' + val);
 // });
 
-switch (args[0]) {
+switch (USER_ARGS[0]) {
   case "new":
-    if (args[1]) {
-      console.log("Creating a mixed reality js app named: ", args[1]);
+    if (USER_ARGS[1]) {
+      let usersAppName = USER_ARGS[1];
+      console.log("Creating a mixed reality js app named: ", USER_ARGS[1]);
+      shell.exec("cp -r " + MODULE_TEMPLATE_PATH + " " + path.join(USER_CWD, usersAppName));
+      console.log("Installing dependencies.");
+      shell.cd("./" + usersAppName);
+      shell.exec("npm install");
+      console.log("\n\n\nSuccessfully created " + usersAppName + "! Run \"cd " + usersAppName + " && mrjs start\" to run the developmet server.");
     } else {
       console.log("Please pass an app name after new.");
     }
     break;
   case "start":
-    console.log("Run mrjs app development server. ", process.cwd());
+    shell.exec("npm start");
     break;
   case "package":
-    console.log("Package mrjs app as Universal Windows Platform application.", process.cwd())
+    shel.exec("npm run package")
     break;
   default:
 
