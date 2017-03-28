@@ -1,19 +1,21 @@
 {
-  "name": "holojs-builder",
-  "version": "0.0.1",
-  "description": "A simpler and more opinionated way to build apps for the hololens with Javascript and ThreeJS.",
+  "name": "mrjs",
+  "version": "0.0.2",
+  "description": "A simple way to build apps for the hololens with Javascript and ThreeJS.",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "start": "echo \"Framework being updated to webpack. Just uploading to npm to claim name\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbradleyfl/HoloJS-Builder.git"
+    "url": "git+https://github.com/dbradleyfl/Mixed-Reality-JS.git"
   },
   "keywords": [
-    "holojs",
-    "augmented",
+    "mrjs",
+    "mixed reality",
+    "mixed reality js",
+    "augmented reality",
     "reality",
     "hololens",
     "three",
@@ -22,9 +24,9 @@
   "author": "Devon Bradley",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dbradleyfl/HoloJS-Builder/issues"
+    "url": "https://github.com/dbradleyfl/Mixed-Reality-JS/issues"
   },
-  "homepage": "https://github.com/dbradleyfl/HoloJS-Builder#readme",
+  "homepage": "https://github.com/dbradleyfl/Mixed-Reality-JS#readme",
   "dependencies": {
     "babelify": "^7.3.0",
     "budo": "^9.4.7",
