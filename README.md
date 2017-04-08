@@ -24,6 +24,6 @@ Hoping to keep this project moving along and toward being a framework for buildi
 ## Missing Features
 * The name of the Universal Windows Application and description / author information should be pulled from the package.json
 * Path issues within the UWP need to be addressed. For example, putting a "./" infront of the example app's texture.png url will break the UWP and fail silently. Need to find a solution for that.
-* Piping images and other assets into the UWP isn't fully inmplemented yet.
+* Piping images and other assets into the UWP isn't fully implemented yet.
 * I'd like to have a --template option for mrjs new the allows you to select ThreeJS or AFrame as your perfered framework.
-* I'd like to have an option for packaging for gearvr, mrjs package_gearvr, that injects the ThreeJS app into a GearVRF application. Need to figure out how difficult running WebGL/ThreeJS will be with GearVRF.
+* I'd like to have an option for packaging for GearVR, mrjs package --gearvr, that injects the ThreeJS app into a GearVRF application. Need to figure out how difficult running WebGL/ThreeJS will be with GearVRF.
