@@ -1,4 +1,7 @@
 # Mixed Reality JS
+
+![MRJS Demo](https://github.com/dbradleyfl/Mixed-Reality-JS/blob/master/demo-mrjs.gif?raw=true)
+
 A simple framework for building Hololens applications with Javascript and [ThreeJS](https://github.com/mrdoob/three.js/). Derived from [HoloJS](https://github.com/Microsoft/HoloJS).
 
 ## Requirements
