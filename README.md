@@ -7,6 +7,7 @@ A simple framework for building Hololens applications with Javascript and [Three
 ## Requirements
 * Windows 10
 * Hololens (Or emulator)
+* Visual Studio 2015
 
 ## Getting Started
 
@@ -16,7 +17,7 @@ A simple framework for building Hololens applications with Javascript and [Three
 
 3. Make sure your Hololens development environment is all setup [using Microsoft's guides](https://developer.microsoft.com/en-us/windows/holographic/getting_started).
 
-4. To deploy and debug, on emulator or device, run  *mrjs package*, open the HoloJS solution located in the release/ folder in Visual Studio. Change the deployment app from HoloHost to ThreeJSApp (right click ThreeJSApp in Solution Exporer and click "set as StartUp project"). Build > Clean Solution. Build > Rebuild Solution. Select your deployment target (Device, or emulator) in the menu then deploy the ThreeJSApp.
+4. To deploy and debug, on emulator or device, run  *mrjs package*, open the HoloJS solution located in the release/ folder in Visual Studio. Change the deployment app from HoloHost to ThreeJSApp (right click ThreeJSApp in Solution Exporer and click "set as StartUp project"). Build > Clean Solution. Build > Rebuild Solution. Select your deployment target (Device, or emulator) in the menu then deploy the ThreeJSApp. You can also utilize the deployment instructions on the [HoloJS repo](https://github.com/Microsoft/HoloJS#system-requirements).
 
 ## Contributions
 Hoping to keep this project moving along and toward being a framework for building VR/AR/MR applications for any device with Javascript. Below are a couple things that need to be impolmented into this version.
